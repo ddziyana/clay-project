@@ -1,0 +1,44 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer {
+    background-color: $Dark;
+    &__header {
+        color: $Light;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        padding-top: 50px;
+    }
+&__text {
+font-weight: 400;
+font-size: 16px;
+padding-top: 40px;
+ color: $Light;
+ text-align: left;
+}
+&__fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    &__checkbox-text {
+        color: $Light;
+    }
+
+&__form {
+    padding-top: 40px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+&__input {
+    display: block;
+  background-color: transparent;
+  border: none; 
+  border-bottom: 1px solid rgba($ui-active,0.5); 
+  outline: none;
+  padding: 15px 0;
+  width: 100%;
+}
+}
