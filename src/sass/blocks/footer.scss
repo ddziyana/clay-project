@@ -2,6 +2,7 @@
 
 .footer {
     background-color: $Dark;
+
     &__header {
         color: $Light;
         font-weight: 500;
@@ -10,35 +11,131 @@
         text-transform: uppercase;
         padding-top: 50px;
     }
-&__text {
-font-weight: 400;
-font-size: 16px;
-padding-top: 40px;
- color: $Light;
- text-align: left;
-}
-&__fieldset {
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        padding-top: 40px;
+        color: $Light;
+        text-align: left;
+    }
+
+    &__fieldset {
         border: 0;
         margin: 0;
         padding: 0;
     }
+
     &__checkbox-text {
         color: $Light;
+        font-size: 14px;
     }
 
-&__form {
-    padding-top: 40px;
-display: flex;
-flex-direction: column;
-gap: 20px;
+    &__form {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__input {
+        display: block;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba($ui-active, 0.5);
+        outline: none;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    &__links {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 60px;
+    }
+
+    /* &__links-both {
+        display: flex;
+        gap: 60px; // Отступ между первыми двумя блоками
+        width: 100%; // Занимает всю ширину
+        max-width: 200px; // Ограничиваем ширину (можно ajust)
+    } */
+
+    &__links-both {
+        display: flex;
+        gap: 60px;
+    }
+
+    &__nav {
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            margin-top: 40px;
+
+            li {
+                color: $Light;
+                padding: 0;
+            }
+        }
+
+
+
+    }
+
+    &__title {
+        margin-top: 40px;
+        color: $Light;
+        font-family: Barlow;
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    &__icons {
+        margin-top: 40px;
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+
+        a {
+            display: block;
+            color: $Light;
+
+            span {
+                font-size: 24px;
+
+            }
+        }
+    }
+&__copiright {
+        margin-top: 40px;
+        text-align: center;
 }
-&__input {
-    display: block;
-  background-color: transparent;
-  border: none; 
-  border-bottom: 1px solid rgba($ui-active,0.5); 
-  outline: none;
-  padding: 15px 0;
-  width: 100%;
+    &__copiright-text {
+        font-weight: 400;
+        font-size: 14px;
+        color: $Light;
+    }
+     &__checkbox {
+        background-color: transparent;
+    }
 }
+
+@media screen and (min-width:768px){
+   .footer {
+    &__input {
+        width: 300px;
+    }
+   &__links-both {
+display: block;
+   }
+   &__links {
+    display: flex;
+    flex-direction: row;
+   }
+   }
 }
