@@ -1,0 +1,111 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.catalog {
+    padding-top: 50px;
+
+    &__title {
+        margin-top: 60px;
+    }
+
+    &__tabs {
+        position: relative;
+        margin-top: 60px;
+        border: 1px solid $Dark;
+        padding: 13px 25px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 13px;
+        column-gap: 50px;
+        letter-spacing: 0%;
+    }
+
+    &__tab {
+        padding: 0;
+        border: none;
+        background: none;
+        color: $Dark;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        /* display: flex;
+        justify-content: space-around; */
+
+        :active::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 5px;
+            background-color: $Dark;
+            bottom: -10px;
+            left: 0;
+        }
+    }
+
+    &__content {
+        margin-top: 60px;
+        padding: 0 24px;
+
+        &-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        &-card {
+            max-width: 340px;
+            border: 1px solid $Dark;
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-info {
+            display: grid;
+            gap: 11px;
+            padding: 11px 0 17px 11px;
+        }
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .catalog {
+        &__tabs {
+            width: 460px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .catalog {
+        margin: 0 30px;
+
+        &__content {
+            margin-top: 60px;
+            padding: 0 25px;
+        }
+    }
+}
+@media screen and (min-width:1920px) {
+    
+    .catalog {
+       margin: 40px 0;
+       padding: 0;
+       &__title {
+        margin-top: 100px;
+       }
+       &__content {
+            padding: 0;
+             margin: 60px 240px;
+            &-item {
+            column-gap: 83px;
+            row-gap: 25px;
+        }
+         &-card {
+            max-width: 285px;}
+        }
+    }
+}
