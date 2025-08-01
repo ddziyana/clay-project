@@ -43,6 +43,7 @@
     }
 
     &-img {
+        width: 100%;
         max-inline-size: calc(100% + 2px);
         transform: translateX(-1px) translateY(-1px);
     }

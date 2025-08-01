@@ -3,6 +3,7 @@
 .header {
 
     &__top {
+       /*  margin-top: 50px; */
         display: flex;
         justify-content: space-between;
     }
@@ -40,6 +41,7 @@
         height: 100vh;
         background-color: $Light;
         top: 0;
+        left:0;
         transform: translatex(-100%);
         position: fixed;
         transition: all 0.3s;
@@ -155,5 +157,9 @@
             width: 150px;
             height: 151px;
         }
+        &__top {
+        margin-top: 40px;
+    }
+
     }
 }

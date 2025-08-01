@@ -7,12 +7,19 @@
 		background-color: transparent;
 		border-bottom: 1px solid $ui-error;
 		outline: transparent;
+		border-right: transparent;
 		&::placeholder {
 			color: $ui-error;
 		}
 	}
 	&__email {
 		color: $Light;
+		padding: 15px 0;
+		background-color: transparent;
+		border-right: transparent;
+		&:focus-visible {
+			outline: transparent;
+		}
 	}
 	&_spaced {
 		margin-top: 60px;
