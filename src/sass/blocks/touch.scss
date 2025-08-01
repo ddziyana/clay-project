@@ -2,7 +2,13 @@
 
 .touch {
     padding-top: 60px;
-
+.just-validate-error-field {
+   border: none; 
+   outline: 1px solid $ui-error;
+}
+.just-validate-error-field[type="checkbox"] {
+  outline: none;
+}
     &__wrapper {
         margin-top: 60px;
         width: 100%;

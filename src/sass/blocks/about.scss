@@ -1,0 +1,46 @@
+.about {
+    &__info {
+        img {
+            margin-top: 60px;
+        }
+
+        p {
+            margin-top: 35px;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .about {
+        &__info {
+            img {
+                max-width: 600px;
+                margin: 60px auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+.about {
+        &__info {
+            display: flex;
+            gap: 20px;
+            margin-top: 60px;
+            img {
+                margin:0;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        &__descr {
+            display: flex;
+            flex-direction: column;
+            :first-child {
+                margin-top: 0;
+            }
+        }
+        
+    }
+}

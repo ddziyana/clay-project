@@ -63,13 +63,17 @@
             left: 0;
             object-fit: cover;
         }
+
         &__title {
             padding-left: 571px;
             margin-top: 300px
         }
-    }
-} 
 
+        &__cta {
+            animation: slideIn 3s
+        }
+    }
+}
 @media screen and (min-width:1920px) {
     .promo {
         padding-top: 40px;

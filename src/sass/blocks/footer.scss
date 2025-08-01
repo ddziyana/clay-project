@@ -3,6 +3,17 @@
 .footer {
 	padding: 50px 0;
 	background-color: $Dark;
+	.just-validate-error-field {
+		background-color: transparent;
+		border-bottom: 1px solid $ui-error;
+		outline: transparent;
+		&::placeholder {
+			color: $ui-error;
+		}
+	}
+	&__email {
+		color: $Light;
+	}
 	&_spaced {
 		margin-top: 60px;
 	}
@@ -26,6 +37,7 @@
 	}
 	&__form {
 		margin-top: 40px;
+
 	}
 	&__input {
 		display: block;
@@ -47,6 +59,7 @@
 			line-height: normal;
 			color: $ui-active;
 		}
+
 	}
 	&__check-block {
 		display: flex;

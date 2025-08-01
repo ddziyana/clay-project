@@ -21,6 +21,17 @@
     }
 }
 
+.btn-read {
+    @include button;
+    width: 145px;
+    height: 32px;
+    font-size: 14px;
+    &:focus {
+        outline: 1px solid $Ceramic;
+        border: none;
+    }
+}
+
 .btn-submit {
     @include button;
     width: 90px;
@@ -49,6 +60,20 @@
         &:active {
             outline: 1px solid $Ceramic;
             border: none;
+        }
+        &:hover {
+             border: 1px solid $Ceramic;
+             color: $Ceramic;
+        }
+    }
+    .btn-read {
+         &:active {
+            outline: 1px solid $Ceramic;
+            border: none;
+        }
+        &:hover {
+             border: 1px solid $Ceramic;
+             color: $Ceramic;
         }
     }
 }
